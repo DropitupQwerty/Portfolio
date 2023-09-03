@@ -14,9 +14,7 @@ export const CursorGlow = () => {
 			window.removeEventListener('mousemove', handleMouseMove)
 		}
 	}, [])
-
-	console.log(position)
     
   
-	return <div className="hidden dark:block bg-blue-500 rounded-full overscroll-none -translate-x-1/2 -translate-y-1/2 pointer-events-none mix-blend-screen top-1/2 -z-1 absolute bg-center h-[50vh] blur-3xl opacity-10 w-[50vh]" style={{ left: position.x, top: position.y ,position:'fixed' }}></div>
+	return <div className="hidden dark:block bg-white rounded-full overscroll-none -translate-x-1/2 -translate-y-1/2 pointer-events-none mix-blend-screen top-1/2 -z-1 absolute bg-center h-[60vh] blur-3xl opacity-10 w-[60vh]" style={{ left: position.x, top: position.y ,position:'fixed' }}></div>
 }

@@ -38,9 +38,9 @@ export const ParticlesBackground = () => {
 					},
 					links: {
 						color: '#000',
-						distance: 150,
+						distance: 100,
 						enable: true,
-						opacity: .2,
+						opacity: .7,
 						width: .4
 					},
 					collisions: {
@@ -52,8 +52,8 @@ export const ParticlesBackground = () => {
 						outModes: {
 							default: 'bounce'
 						},
-						random: false,
-						speed: .1,
+						random: true,
+						speed: 1.5,
 						straight: false
 					},
 					number: {
@@ -68,6 +68,7 @@ export const ParticlesBackground = () => {
 					},
 					shape: {
 						type: 'circle'
+						
 					},
 					size: {
 						value: { min: 1, max:3 }

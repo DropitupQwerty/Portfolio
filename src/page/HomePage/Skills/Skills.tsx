@@ -16,10 +16,11 @@ export const Skills = () => {
 				<div className=' flex gap-10 flex-wrap w-[80%] justify-center'>
 					{
 						ProgrammingLanguages.map((language , index) => 
-							<div key={index}>
-								<div className='text-[7vh] ' style={{color:language.color}}>
+							<div key={index} className='flex flex-col items-center'>
+								<div className='text-[7vh] text-primary-black dark:text-primary-white ' >
 									{language.icon}
 								</div>
+								<div className='text-[1.5vh] text-primary-black dark:text-primary-white font-DotGothic'>{language.name}</div>
 							</div>
 						)
 					}
