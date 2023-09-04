@@ -7,13 +7,27 @@ import healthcare from 'assets/projects/healthcareimage.png'
 import yokai from 'assets/projects/yokai.png'
 
 
-export const projects = [
+export type ProgrammingLanguage = {
+	icon: React.ReactNode; // Use ReactNode to specify that 'icon' can be a React element
+	name: string;
+  };
+  
+export type ProjectType = {
+	img: string; // Assuming 'img' is a string URL
+	name: string;
+	nameDesc: string;
+	links: string;
+	description: string;
+	programminglanguagesIcons: ProgrammingLanguage[];
+  };
+
+export const projects : ProjectType[] = [
 	{
 		img: reskyutBg,
 		name: 'RESKYUT',
 		nameDesc:'Made Adoption Fun and Easy',
 		links: 'https://reskyut-landing-page.vercel.app/',
-		description:'A web and mobile project that makes it easier to select the ideal pet while also assisting overcrowded animal shelters. It aids animals in locating the ideal parents.',
+		description:'The web and mobile project is dedicated to simplifying the pet adoption process while aiding overcrowded animal shelters and facilitating ideal pet-parent matches. This platform offers an intuitive interface for users to search for pets based on their preferences, utilizing geolocation services to connect users with nearby shelters. In addition to adoption services, it provides a wealth of pet care resources, ensuring responsible pet ownership. The mobile app extends accessibility, fostering a pet-loving community. By bridging shelters, prospective pet owners, and resources, this project streamlines adoption, promotes animal well-being, and strengthens the bond between pets and their new families.',
 		programminglanguagesIcons: [
 			{
 				icon: <BiLogoJavascript />,

@@ -4,7 +4,7 @@ import { MySocmed } from 'utility/Social'
 
 export const Contact = () => {
 	return (
-		<div className='relative items-center flex my-20'>
+		<div className='relative items-center flex my-20 h-screen'>
 			<SideLabel label='CONTACT'/>
 			<div className='container mx-auto flex flex-col items-center justify-center'>
 				<div className='my-10'>
@@ -15,7 +15,7 @@ export const Contact = () => {
 				<div className='w-1/2 flex flex-col gap-10'>
 					<div className=' text-[2vh] w-full '>
 						<label className='block font-semibold uppercase tracking-widest'>Email</label>
-						<input className='p-4 w-full dark:text-primary-black bg-white border rounded-lg shadow-md'/>
+						<input className='p-4 w-full dark:text-primary-black bg-white  border rounded-lg shadow-md'/>
 					</div>
 					<div className=' text-[2vh] w-full'>
 						<label className='block font-semibold uppercase tracking-widest '>Message</label>

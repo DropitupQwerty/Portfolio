@@ -34,7 +34,7 @@ export const ParticlesBackground = () => {
 				},
 				particles: {
 					color: {
-						value: '#333'
+						value: '#fff'
 					},
 					links: {
 						color: '#000',
@@ -53,7 +53,7 @@ export const ParticlesBackground = () => {
 							default: 'bounce'
 						},
 						random: true,
-						speed: 1.5,
+						speed: .2,
 						straight: false
 					},
 					number: {

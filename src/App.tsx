@@ -8,9 +8,9 @@ function App() {
 
 
 	return (
-		<div className='dark:text-primary-white text-primary-black dark:bg-black/80 duration-300 select-none' >
+		<div className='dark:text-primary-white text-primary-black dark:bg-black/80 duration-300   no-scrollbar' >
 			<CursorGlow/>
-			<div className='z-10'>
+			<div className='z-10  no-scrollbar '>
 				<HomePage/>
 			</div>
 			<div className='opacity-40 -z-10'>

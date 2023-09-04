@@ -12,7 +12,7 @@ export const Footer = () => {
 				</div>
 			</div>
 
-			<div className='text-[2vh]'>
+			<div className='text-[2vh] p-4 opacity-60'>
                 ©2022 Jacob Allen Valderama, Created from React , Framer Motion      
 			</div>
 		</div>

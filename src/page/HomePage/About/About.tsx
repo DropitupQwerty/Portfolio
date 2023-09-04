@@ -3,30 +3,44 @@ import myImage  from 'assets/myImage3.webp'
 import { MySocmed } from 'utility/Social'
 import { AppLabelWaterMark } from 'components/AppLabelWaterMark'
 import { SideLabel } from 'components/AppSideLabel'
+import { useScroll, useTransform , motion} from 'framer-motion'
 
 
 
 
 export const About = () => {
 
+	const container = React.useRef(null)
+	const { scrollYProgress } = useScroll({
+		target:container,
+		offset:['start end' , 'end start']
+	})
 
+	const y = useTransform(scrollYProgress,[0,1] , [-200,200])
+
+	
 
 	return (
-		<div className=' relative flex  items-center'>
-			<SideLabel label='ABOUT ME'/>
+		<div ref={container} className=' relative flex overflow-hidden items-center '>
+			<SideLabel label='ABOUT ME' />
+			
 			<div className='container mx-auto'>
-				<div className=' h-full  rounded-xl flex items-center justify-between relative p-[5%] w-full ' >
-					<AppLabelWaterMark label='ABOUT ME'/>
+				<div className=' h-full z-10  rounded-xl flex items-center justify-between relative w-full ' >
+					<AppLabelWaterMark label='ABOUT ME'  x={y}/>				
 					<div className='gap-10 flex flex-col'>
 						{MySocmed.map((social , index)=>
-							<div key={index} className='text-[5vh] dark:text-primary-white'>
+							<a href={social.link} target='_blank' key={index} className='text-[5vh] hover:scale-105 dark:text-primary-white' rel="noreferrer">
 								{social.icon}
-
-							</div>)}
+							</a>)}
 					</div>
 					<div>
-						<div className='rounded-full  max-h-[60vh] w-[60vh] overflow-hidden '>
-							<img className='h-full w-full object-cover' src={myImage}/>
+						<div className='rounded-full shadow-sm relative  max-h-[60vh] w-[60vh] overflow-hidden '>
+					
+							<motion.div className='  dark:bg-primary-white h-full w-full absolute -z-[20]'>
+							</motion.div>
+							<motion.div className='relative z-20 drop-shadow-md'>
+								<img className='h-full w-full  object-cover' src={myImage}/>
+							</motion.div>
 						</div>
 					</div>
 
