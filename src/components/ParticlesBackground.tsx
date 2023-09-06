@@ -6,6 +6,8 @@ import { Particles  }  from 'react-tsparticles'
 
 
 
+  
+  
 
 
 export const ParticlesBackground = () => {
@@ -23,61 +25,62 @@ export const ParticlesBackground = () => {
 	return (
 
 		<Particles
+			className='max-h-screen absolute'
 			id="tsparticles"
 			init={particlesInit}
 			loaded={particlesLoaded}
 		
-			options={{
-				fpsLimit: 140,
-				interactivity: {
-					events: {
-						resize: true,
-					},
-				},
-				particles: {
-					color: {
-						value: '#fff'
-					},
-					links: {
-						color: '#fff',
-						distance: 100,
-						enable: true,
-						opacity: 1,
-						width: .4
-					},
-					collisions: {
-						enable: true
-					},
-					move: {
-						direction: 'none',
-						enable: true,
-						outModes: {
-							default: 'bounce'
-						},
-						random: true,
-						speed: .2,
-						straight: false
-					},
-					number: {
-						density: {
-							enable: true,
-							area: 1000
-						},
-						value: 80
-					},
-					opacity: {
-						value: 1
-					},
-					shape: {
-						type: 'circle'
+			// options={{
+			// 	fpsLimit: 140,
+			// 	interactivity: {
+			// 		events: {
+			// 			resize: true,
+			// 		},
+			// 	},
+			// 	particles: {
+			// 		color: {
+			// 			value: '#fff'
+			// 		},
+			// 		links: {
+			// 			color: '#fff',
+			// 			distance: 100,
+			// 			enable: true,
+			// 			opacity: 1,
+			// 			width: .4
+			// 		},
+			// 		collisions: {
+			// 			enable: true
+			// 		},
+			// 		move: {
+			// 			direction: 'none',
+			// 			enable: true,
+			// 			outModes: {
+			// 				default: 'bounce'
+			// 			},
+			// 			random: true,
+			// 			speed: .2,
+			// 			straight: false
+			// 		},
+			// 		number: {
+			// 			density: {
+			// 				enable: true,
+			// 				area: 1000
+			// 			},
+			// 			value: 80
+			// 		},
+			// 		opacity: {
+			// 			value: 1
+			// 		},
+			// 		shape: {
+			// 			type: 'circle'
 						
-					},
-					size: {
-						value: { min: 1, max:1 }
-					}
-				},
-				detectRetina: true
-			}}
+			// 		},
+			// 		size: {
+			// 			value: { min: 1, max:1 }
+			// 		}
+			// 	},
+			// 	detectRetina: true
+			// }}
 		/>
 	)
 }

@@ -4,14 +4,15 @@ import { MySocmed } from 'utility/Social'
 
 export const Contact = () => {
 	return (
-		<div className='relative items-center flex my-20 h-screen'>
+		<div className='relative items-center flex my-20 '>
 			<SideLabel label='CONTACT'/>
 			<div className='container mx-auto flex flex-col items-center justify-center'>
 				<div className='my-10'>
-					<div className='text-center text-[5vh] font-bold'>GET IN TOUCH</div>
-					<div className='text-center text-[3vh] font-bold font-DotGothic opacity- text-primary-orange'>write, email, connect, talk</div>
+					<div className='text-center text-6xl font-bold'>GET IN TOUCH</div>
+					{/* <div className='text-center text-4xl font-bold font-DotGothic opacity- text-primary-orange'>write, email, connect, talk</div> */}
 				</div>
 
+				{/* 
 				<div className='w-1/2 flex flex-col gap-10'>
 					<div className=' text-[2vh] w-full '>
 						<label className='block font-semibold uppercase tracking-widest'>Email</label>
@@ -24,10 +25,10 @@ export const Contact = () => {
 					<div>
 						<button className='text-[2vh] bg-primary-orange p-4 px-6 font-bold rounded-lg text-primary-white'>SUBMIT</button>
 					</div>
-				</div>
+				</div> */}
 
 				<div className='my-10'>
-					<div className='text-[3vh] font-DotGothic font-bold tracking-widest text-primary-orange'>YOU CAN ALSO VISIT ME VIA:</div>
+					<div className='text-4xl font-DotGothic font-bold tracking-widest text-primary-orange'>YOU CAN VISIT ME OR MESSAGE ME VIA:</div>
 					<div className='flex gap-10 justify-center mt-12'>
 						{MySocmed.map((social,index)=>
 							<div key={index} className='text-[4vh] '>

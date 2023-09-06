@@ -1,5 +1,5 @@
 import React from 'react'
-import { BiLogoCss3, BiLogoFirebase, BiLogoHtml5, BiLogoJava, BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiLogoSpringBoot, BiLogoTailwindCss, BiLogoTypescript, BiLogoUnity, BiLogoVisualStudio } from 'react-icons/bi'
+import { BiLogoCss3, BiLogoFirebase, BiLogoHtml5, BiLogoJava, BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiLogoSpringBoot, BiLogoTypescript, BiLogoUnity } from 'react-icons/bi'
 import { SiAdobeillustrator, SiAdobephotoshop, SiMysql } from 'react-icons/si'
 
 export const ProgrammingLanguages = [
@@ -45,18 +45,18 @@ export const ProgrammingLanguages = [
 		color: '#6CB52D',
 		link: 'https://spring.io/projects/spring-boot',
 	},
-	{
-		icon: <BiLogoTailwindCss />,
-		name: 'Tailwind',
-		color: '#38bdf8',
-		link: 'https://tailwindcss.com/',
-	},
-	{
-		icon: <BiLogoVisualStudio />,
-		name: 'VS code',
-		color: '#3BA4EA',
-		link: 'https://code.visualstudio.com/',
-	},
+	// {
+	// 	icon: <BiLogoTailwindCss />,
+	// 	name: 'Tailwind',
+	// 	color: '#38bdf8',
+	// 	link: 'https://tailwindcss.com/',
+	// },
+	// {
+	// 	icon: <BiLogoVisualStudio />,
+	// 	name: 'VS code',
+	// 	color: '#3BA4EA',
+	// 	link: 'https://code.visualstudio.com/',
+	// },
 	{
 		icon: <BiLogoUnity />,
 		name: 'Unity',

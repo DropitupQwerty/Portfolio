@@ -17,6 +17,7 @@ export const AnimationUpFade = (props : AnimationUpFadeProps) => {
     
 	const variants = { 
 		hidden : {
+			opacity: 0,
 			y:props.hiddenY ? props.hiddenY :200,
 		},
 		show: { 
@@ -28,6 +29,6 @@ export const AnimationUpFade = (props : AnimationUpFadeProps) => {
     
     
 	return (
-		<motion.div  variants={variants} className={props.className} initial="hidden" viewport={{once: true}} whileInView="show" transition={{duration: .5}}>{props.children}</motion.div>
+		<motion.div  variants={variants} className={props.className} initial="hidden" viewport={{once: true}} whileInView="show" transition={{duration: 1}}>{props.children}</motion.div>
 	)
 }

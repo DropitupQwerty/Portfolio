@@ -1,8 +1,6 @@
 import React from 'react'
 import {MdDarkMode , MdLightMode} from 'react-icons/md'
-import { BiArrowFromLeft, BiArrowToLeft, BiExit, BiX } from 'react-icons/bi'
 import { AnimatePresence, motion } from 'framer-motion'
-import { FaArrowRight } from 'react-icons/fa'
 import { MySocmed } from 'utility/Social'
 
 export const NavigationBar = () => {
@@ -47,7 +45,7 @@ export const NavigationBar = () => {
 
 
 	return (
-		<div className='absolute flex top-0 justify-between w-full z-[99999999] '>
+		<div className='fixed flex top-0 justify-between w-full z-[99999999] '>
 
 			<nav className=' flex justify-between items-center w-full p-10'>
 				<button onClick={()=> setOpen(!open)} className='flex flex-col gap-4'>
@@ -71,7 +69,7 @@ export const NavigationBar = () => {
 					animate={{ opacity: 1 ,x:0 }}
 					exit={{ opacity: 0 , x: -1000 }}
 					transition={{duration:1}}
-					className={'bg-white p-[3%] dark:bg-primary-black dark:text-primary-white min-h-screen text-[12vh] font-bold  h-full w-full shadow-xl fixed overflow-hidden leading-none flex  items-end'}>
+					className={'bg-white p-[3%] dark:bg-black/80 backdrop-blur-md dark:text-primary-white min-h-screen text-[12vh] font-bold  h-full w-full shadow-xl fixed overflow-hidden leading-none flex  items-end'}>
 
 					{/* <div className='absolute w-fit text-end text-[18vh] text-transparent top-0 right-0' style={{WebkitTextStroke: '2px #333'}}>MY PORTFOLIO</div>	 */}
 
@@ -96,7 +94,7 @@ export const NavigationBar = () => {
 						</div>
 
 						<div className='flex items-center'>
-							<div className='flex flex-col gap-4'>
+							<div className='flex flex-col gap-10 text-[8vh]'>
 								{MySocmed.map((social,index)=>
 									<div key={index}>
 										<button className='hover:text-primary-orange'>{social.icon}</button>
