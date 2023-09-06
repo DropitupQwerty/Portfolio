@@ -2,6 +2,7 @@ import { SideLabel } from 'components/AppSideLabel'
 import React from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { ProjectType } from 'utility/projects'
+import { AnimationUpFade } from 'components/AnimationUpFade'
 
 type ProjectCardProps = { 
 	index: number,
@@ -16,16 +17,6 @@ export const ProjectCard = ({index , project} : ProjectCardProps) => {
 		offset: ['start end' , 'end start']
 	})
 
-	const variants = {
-		hidden : {
-			opacity: 0,
-			x: 0,
-		},
-		show : { 
-			opacity: 1000,
-			x: -20,
-		}
-	}
 
 
 	const imageY = useTransform(scrollYProgress , [0,1] , [-200,200])
@@ -46,9 +37,9 @@ export const ProjectCard = ({index , project} : ProjectCardProps) => {
 						</div>
 					</motion.div>
 				</div>
-				<div className='h-[50vh]   flex my-10 justify-center w-full z-10 '>
-					<motion.div className='h-full w-full flex flex-col justify-center items-center z-10'>
-						<img src={project.img} className='h-full w-auto '/>
+				<div className='h-[50vh]   flex my-10 justify-center w-full '>
+					<motion.div className='h-full w-full flex flex-col justify-center items-center '>
+						<img src={project.img} className='h-[90%] w-auto '/>
 						<div className="hidden dark:block bg-white rounded-full overscroll-none  pointer-events-none mix-blend-screen  -z-10 absolute bg-center h-[70vh] blur-3xl opacity-10 w-[70vh]" ></div>
 
 						<a className='text-[2.5vh] my-2  font-bold  uppercase flex items-center gap-20'>Visit Project 
@@ -58,11 +49,18 @@ export const ProjectCard = ({index , project} : ProjectCardProps) => {
 							</span>
 						</a>
 					</motion.div>
-					<div className=' w-[70%] flex flex-col justify-between'>
-						<motion.div variants={variants} initial="hidden" whileInView="show" transition={{duration:1}} style={{y:imageY}}  className='text-[2.4vh] font-DotGothic max-h-[40vh] scroll-smooth   overflow-y-auto text-primary-orange text-justify p-[5%] indent-[50px]'>{project.description}</motion.div>
-							
-						<motion.div style={{y:imageY}} className='flex gap-5 self-end'>{project.programminglanguagesIcons.map((languge , index)=>
-							<div key={index} className='text-[5vh]'>{languge.icon}</div>)}
+					<div className=' w-full flex flex-col justify-between p-[5%]'>
+						
+						<AnimationUpFade>
+							<motion.div  style={{y:imageY}}  className='text-[2vh] font-DotGothic max-h-[40vh] scroll-smooth   overflow-y-auto text-primary-black dark:text-primary-orange text-justify  indent-[50px]'>
+								{project.description}
+							</motion.div>
+						</AnimationUpFade>
+
+						<motion.div style={{y:imageY}} className='flex justify-between items-center my-4'>
+							<div className='flex gap-5 self-end'>{project.programminglanguagesIcons.map((languge , index)=>
+								<div key={index} className='text-[5vh]'>{languge.icon}</div>)}
+							</div>
 						</motion.div>
 								
 					</div>

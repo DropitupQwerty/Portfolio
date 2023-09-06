@@ -21,6 +21,24 @@ export default {
 				'DotGothic' :  ['DotGothic16', 'sans-serif']
 			}
 		},
+		keyframes: {
+			typing: {
+				to: {
+					left: '107%'
+				}  
+			},
+			blink: {
+				'50%': {
+					borderColor: 'transparent'
+				},
+				'100%': {
+					borderColor: 'white'
+				}  
+			}
+		},
+		animation: {
+			typing: 'typing 2s steps(14) infinite alternate, blink .7s infinite'
+		}
 	},
 	plugins: [],
 }

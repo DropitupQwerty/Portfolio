@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BsFacebook, BsInstagram, BsDiscord,  BsGithub, BsLinkedin} from 'react-icons/bs'
+import { BsFacebook, BsInstagram, BsDiscord, BsLinkedin} from 'react-icons/bs'
 
 export type socmedType = {
     icon: React.ReactNode,
@@ -24,12 +24,6 @@ export const  MySocmed:socmedType[] = [
 		name:'Discord',
 		icon:<BsDiscord />,
 		link: 'https://discord.com/users/697003746361606175',
-	},
-	{
-		name:'Github',
-		icon:<BsGithub />,
-		link: 'https://github.com/DropitupQwerty',
-
 	},
 	{
 		name:'LinkedIn',

@@ -21,10 +21,12 @@ export const ParticlesBackground = () => {
 
 
 	return (
+
 		<Particles
 			id="tsparticles"
 			init={particlesInit}
 			loaded={particlesLoaded}
+		
 			options={{
 				fpsLimit: 140,
 				interactivity: {
@@ -37,10 +39,10 @@ export const ParticlesBackground = () => {
 						value: '#fff'
 					},
 					links: {
-						color: '#000',
+						color: '#fff',
 						distance: 100,
 						enable: true,
-						opacity: .7,
+						opacity: 1,
 						width: .4
 					},
 					collisions: {
@@ -71,7 +73,7 @@ export const ParticlesBackground = () => {
 						
 					},
 					size: {
-						value: { min: 1, max:3 }
+						value: { min: 1, max:1 }
 					}
 				},
 				detectRetina: true

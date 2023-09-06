@@ -14,7 +14,7 @@ import { Footer } from 'page/HomePage/Footer'
 
 export const HomePage = () => {
 	return (
-		<div className='relative z-10 no-scrollbar'>
+		<div className='relative z-10 '>
 			<NavigationBar/>	
 			<Header/>
 			<About/>
