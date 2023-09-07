@@ -41,7 +41,7 @@ export const Contact = () => {
 				<form ref={formRef} onSubmit={sendEmail} className=' w-full lg:w-1/2 flex flex-col gap-10'>
 					<div className=' text-[2vh] w-full '>
 						<label className='block font-semibold uppercase tracking-widest'>Email</label>
-						<input id="email" required name='email' className='p-4 w-full outline-primary-orange dark:text-primary-black bg-white  border rounded-lg shadow-md'/>
+						<input id="email" type='email' required name='email' className='p-4 w-full outline-primary-orange dark:text-primary-black bg-white  border rounded-lg shadow-md'/>
 					</div>
 					<div className=' text-[2vh] w-full'>
 						<label className='block font-semibold uppercase tracking-widest '>Message</label>
