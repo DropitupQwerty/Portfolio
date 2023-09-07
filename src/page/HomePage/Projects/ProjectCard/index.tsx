@@ -24,13 +24,13 @@ export const ProjectCard = ({index , project} : ProjectCardProps) => {
 		<motion.div ref={container} className='flex flex-col justify-center min-h-fit my-[10%]  lg:my-[2%]'>
 			<SideLabel label={`PROJECT 0${index + 1}`}/>
 			<div className='container mx-auto w-[90%] lg:w-full '>
-				<div className='max-h-[15vh] overflow  relative'>
+				<div className=' overflow  relative'>
 					<motion.div className='flex flex-col lg:flex-row font-poppins items-start lg:items-center lg:mx-[5%] ' >
 						<div className='text-[7vh] lg:text-[15vh] self-start dark:block hidden  font-black text-transparent leading-none' style={{WebkitTextStroke: '1px #fff'}}>0{index + 1}</div>
 						<div className='text-[7vh] lg:text-[15vh] self-start dark:hidden block  font-black text-transparent leading-none' style={{WebkitTextStroke: '1px #333'}}>0{index + 1}</div>
 						<a className='' href={project.links} target='_blank' rel="noreferrer">
-							<div className='text-5xl lg:text-[8vh] font-black text-primary-orange leading-none uppercase '>{project.name}</div>
-							<div className='text-3xl lg:text-[4vh] font-black text-primary-black  leading-none uppercase dark:text-primary-white'>{project.nameDesc}</div>
+							<div className='text-7xl lg:text-[8vh] font-black text-primary-orange leading-none uppercase '>{project.name}</div>
+							<div className='text-5xl lg:text-[4vh] font-black text-primary-black  leading-none uppercase dark:text-primary-white'>{project.nameDesc}</div>
 						</a>
 					</motion.div>
 				</div>
