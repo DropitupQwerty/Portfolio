@@ -40,7 +40,7 @@ export const Header = () => {
 			<div className=''>
 				<div>
 					<div className='overflow h-fit'>
-						<div className='uppercase text-[5vh] text-center  lg:text-[7vh] lg:flex   font-black  leading-none '>
+						<div className='uppercase text-7xl text-center  lg:text-[7vh] lg:flex   font-black  leading-none '>
 							<motion.div ><span className='tracking-wider whitespace-nowrap '>Jacob Allen</span> </motion.div>
 							<motion.div ><span className='text-primary-orange tracking-widest '>Valderama</span></motion.div >
 						</div>

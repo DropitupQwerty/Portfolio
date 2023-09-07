@@ -28,7 +28,7 @@ export const Contact = () => {
 				</div> */}
 
 				<div className='my-10'>
-					<div className='text-4xl text-center font-DotGothic font-bold tracking-widest text-primary-orange'>YOU CAN VISIT ME OR MESSAGE ME VIA:</div>
+					<div className='text-4xl text-center font-poppins  tracking-widest text-primary-orange'>YOU CAN VISIT ME OR MESSAGE ME VIA:</div>
 					<div className='flex gap-10 justify-center mt-12'>
 						{MySocmed.map((social,index)=>
 							<div key={index} className='text-[4vh] '>

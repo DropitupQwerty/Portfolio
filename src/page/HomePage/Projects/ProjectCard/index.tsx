@@ -18,7 +18,7 @@ export const ProjectCard = ({index , project} : ProjectCardProps) => {
 
 
 
-	const imageY = useTransform(scrollYProgress , [0,1] , [-200,200])
+	const imageY = useTransform(scrollYProgress , [0,1] , [-0,50])
 
 	return (
 		<motion.div ref={container} className='flex flex-col justify-center min-h-screen my-[10%]  lg:my-[2%]'>
@@ -28,18 +28,18 @@ export const ProjectCard = ({index , project} : ProjectCardProps) => {
 			<div className='container mx-auto w-[90%] lg:w-full '>
 				<div className='max-h-[15vh] overflow  relative'>
 					<motion.div className='flex flex-col lg:flex-row  items-start lg:items-center lg:mx-[5%] ' >
-						<div className='text-[7vh] lg:text-[15vh] self-start dark:block hidden  font-black text-transparent leading-none' style={{WebkitTextStroke: '2px #fff'}}>0{index + 1}</div>
-						<div className='text-[7vh] lg:text-[15vh] self-start dark:hidden block  font-black text-transparent leading-none' style={{WebkitTextStroke: '2px #333'}}>0{index + 1}</div>
+						<div className='text-[7vh] lg:text-[15vh] self-start dark:block hidden  font-black text-transparent leading-none' style={{WebkitTextStroke: '1px #fff'}}>0{index + 1}</div>
+						<div className='text-[7vh] lg:text-[15vh] self-start dark:hidden block  font-black text-transparent leading-none' style={{WebkitTextStroke: '1px #333'}}>0{index + 1}</div>
 						<a className='' href={project.links} target='_blank' rel="noreferrer">
-							<div className='text-[4vh] lg:text-[8vh] font-black text-primary-orange leading-none uppercase drop-shadow-lg'>{project.name}</div>
-							<div className='text-[2vh] lg:text-[4vh] font-black text-primary-black  leading-none uppercase dark:text-primary-white'>{project.nameDesc}</div>
+							<div className='text-5xl lg:text-[8vh] font-black text-primary-orange leading-none uppercase drop-shadow-lg'>{project.name}</div>
+							<div className='text-3xl lg:text-[4vh] font-black text-primary-black  leading-none uppercase dark:text-primary-white'>{project.nameDesc}</div>
 						</a>
 					</motion.div>
 				</div>
 				<div className=' flex flex-col lg:flex-row my-[5%] justify-center w-full '>
 					<div className='h-full w-full flex flex-col justify-center items-center  '>
 						<a href={project.links} target='_blank' rel="noreferrer" className=' '>
-							<img src={project.img} className='h-[90%] w-auto hover:scale-105  duration-200'/>
+							<motion.img src={project.img} className='h-[90%] w-auto hover:scale-105  duration-200'  style={{y:imageY}}/>
 						</a>
 						{/* <div className="hidden dark:block bg-white rounded-full mix-blend-screen  -z-10 absolute bg-center h-[60vh] blur-3xl opacity-10 w-[60vh]" ></div> */}
 
