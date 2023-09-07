@@ -41,7 +41,7 @@ export const ProjectCard = ({index , project} : ProjectCardProps) => {
 						<a href={project.links} target='_blank' rel="noreferrer" className='my-40 '>
 							<img src={project.img} className='h-[90%] w-auto hover:scale-105  duration-200'/>
 						</a>
-						<div className="hidden dark:block bg-white rounded-full overscroll-none  pointer-events-none mix-blend-screen  -z-10 absolute bg-center h-[60vh] blur-3xl opacity-10 w-[60vh]" ></div>
+						{/* <div className="hidden dark:block bg-white rounded-full mix-blend-screen  -z-10 absolute bg-center h-[60vh] blur-3xl opacity-10 w-[60vh]" ></div> */}
 
 						{/* <a className='text-[2.5vh] my-2  font-bold  uppercase flex items-center gap-20'>Visit Project 
 							<span className='w-[200px] h-[1px] bg-primary-black relative dark:bg-primary-white flex items-center'>

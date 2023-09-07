@@ -4,9 +4,9 @@ import { MySocmed } from 'utility/Social'
 
 export const Contact = () => {
 	return (
-		<div className='relative items-center flex my-[30%] lg:my-[10%] '>
+		<div className='relative items-center flex my-[40%] lg:my-[10%] '>
 			<SideLabel label='CONTACT'/>
-			<div className='container mx-auto flex flex-col items-center justify-center'>
+			<div className='container mx-auto flex flex-col items-center justify-center w-[80%] lg:w-full'>
 				<div className='my-10'>
 					<div className='text-center text-6xl font-bold'>GET IN TOUCH</div>
 					{/* <div className='text-center text-4xl font-bold font-DotGothic opacity- text-primary-orange'>write, email, connect, talk</div> */}
