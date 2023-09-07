@@ -60,9 +60,9 @@ export const NavigationBar = () => {
 
 			<nav className={`flex justify-between items-center w-full p-[.7%] transition-all duration-700 bg-primary-white ${colorChange ? '  bg-opacity-100 shadow-lg ' : 'bg-opacity-0'}`}>
 				<button onClick={()=> setOpen(!open)} className='flex flex-col gap-2'>
-					<span className='h-2 rounded-full w-[80px] bg-primary-orange dark:bg-primary-white'></span>
-					<span className='h-2 rounded-full w-[60px] bg-primary-orange dark:bg-primary-white'></span>
 					<span className='h-2 rounded-full w-[70px] bg-primary-orange dark:bg-primary-white'></span>
+					<span className='h-2 rounded-full w-[50px] bg-primary-orange dark:bg-primary-white'></span>
+					<span className='h-2 rounded-full w-[60px] bg-primary-orange dark:bg-primary-white'></span>
 				</button>
 				<div className=''>
 					<button className='flex  text-[4rem] gap-6 uppercase  text-primary-black ' onClick={()=>setIsDarkMode(!isDarkMode)}>
