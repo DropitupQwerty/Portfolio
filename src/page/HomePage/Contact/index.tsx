@@ -1,6 +1,6 @@
+import React from 'react'
 import { AnimationUpFade } from 'components/AnimationUpFade'
 import { SideLabel } from 'components/AppSideLabel'
-import React from 'react'
 import { MySocmed } from 'utility/Social'
 
 export const Contact = () => {
