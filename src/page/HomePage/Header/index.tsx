@@ -40,7 +40,7 @@ export const Header = () => {
 			<div className=''>
 				<div>
 					<div className='overflow h-fit'>
-						<div className='uppercase text-[5vh] text-center  lg:text-[7vh] lg:flex   font-black  leading-none drop-shadow-lg '>
+						<div className='uppercase text-[5vh] text-center  lg:text-[7vh] lg:flex   font-black  leading-none '>
 							<motion.div ><span className='tracking-wider whitespace-nowrap '>Jacob Allen</span> </motion.div>
 							<motion.div ><span className='text-primary-orange tracking-widest '>Valderama</span></motion.div >
 						</div>
@@ -50,8 +50,8 @@ export const Header = () => {
 					</motion.div>
 				</div>
 
-				<div className='mt-14 flex flex-col -skew-x-12 gap-4 text-center'>
-					<a href='https://drive.google.com/file/d/1e9yyi60UF_SybvuHgRfyTUvc4Zq0i0dO/view' target='_blank' className='tracking-[8px]  text-primary-orange  text-[2.4vh] font-semibold uppercase hover:underline ' rel="noreferrer">
+				<div className='mt-14 flex flex-col  gap-4 text-center'>
+					<a href='https://drive.google.com/file/d/1e9yyi60UF_SybvuHgRfyTUvc4Zq0i0dO/view' target='_blank' className='tracking-[8px]  text-primary-orange  text-[2.4vh] font-poppins uppercase hover:underline ' rel="noreferrer">
 			DOWNLOAD RESUME
 					</a>
 			

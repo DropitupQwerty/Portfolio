@@ -21,24 +21,24 @@ export const ProjectCard = ({index , project} : ProjectCardProps) => {
 	const imageY = useTransform(scrollYProgress , [0,1] , [-200,200])
 
 	return (
-		<motion.div ref={container} className='flex flex-col justify-center min-h-screen my-[10%]  lg:my-[6%]'>
+		<motion.div ref={container} className='flex flex-col justify-center min-h-screen my-[10%]  lg:my-[2%]'>
 			<SideLabel label={`PROJECT 0${index + 1}`}/>
 							
 			{/* <motion.div className='absolute text-[10vh] z-10 text-center font-black w-full overflow-hidden flex justify-center  text-transparent opacity-20 dark:opacity-100 uppercase leading-none' style={{WebkitTextStroke: '2px #333', y:imageY}}>{project.name}</motion.div> */}
 			<div className='container mx-auto w-[90%] lg:w-full '>
 				<div className='max-h-[15vh] overflow  relative'>
-					<motion.div className='flex items-center mx-[5%] '  style={{y:imageY}}>
-						<div className='text-[7vh] lg:text-[15vh] dark:block hidden  font-black text-transparent leading-none' style={{WebkitTextStroke: '2px #F97316'}}>0{index + 1}</div>
-						<div className='text-[7vh] lg:text-[15vh] dark:hidden block  font-black text-transparent leading-none' style={{WebkitTextStroke: '2px #333'}}>0{index + 1}</div>
+					<motion.div className='flex flex-col lg:flex-row  items-start lg:items-center lg:mx-[5%] ' >
+						<div className='text-[7vh] lg:text-[15vh] self-start dark:block hidden  font-black text-transparent leading-none' style={{WebkitTextStroke: '2px #fff'}}>0{index + 1}</div>
+						<div className='text-[7vh] lg:text-[15vh] self-start dark:hidden block  font-black text-transparent leading-none' style={{WebkitTextStroke: '2px #333'}}>0{index + 1}</div>
 						<a className='' href={project.links} target='_blank' rel="noreferrer">
 							<div className='text-[4vh] lg:text-[8vh] font-black text-primary-orange leading-none uppercase drop-shadow-lg'>{project.name}</div>
 							<div className='text-[2vh] lg:text-[4vh] font-black text-primary-black  leading-none uppercase dark:text-primary-white'>{project.nameDesc}</div>
 						</a>
 					</motion.div>
 				</div>
-				<div className='h-[50vh]   flex flex-col lg:flex-row my-[5%] justify-center w-full '>
+				<div className=' flex flex-col lg:flex-row my-[5%] justify-center w-full '>
 					<div className='h-full w-full flex flex-col justify-center items-center  '>
-						<a href={project.links} target='_blank' rel="noreferrer" className='my-40 '>
+						<a href={project.links} target='_blank' rel="noreferrer" className=' '>
 							<img src={project.img} className='h-[90%] w-auto hover:scale-105  duration-200'/>
 						</a>
 						{/* <div className="hidden dark:block bg-white rounded-full mix-blend-screen  -z-10 absolute bg-center h-[60vh] blur-3xl opacity-10 w-[60vh]" ></div> */}
@@ -50,14 +50,14 @@ export const ProjectCard = ({index , project} : ProjectCardProps) => {
 							</span>
 						</a> */}
 					</div>
-					<div className=' w-full flex flex-col justify-between '>
+					<div className=' w-full flex flex-col justify-between my-10'>
 						
-						<motion.div  style={{y:imageY}}  className='text-3xl leading-relaxed p-5 font-DotGothic max-h-[40vh] scroll-smooth   overflow-y-auto text-primary-black dark:text-primary-white text-justify  indent-[50px]'>
+						<motion.div  className='text-3xl leading-relaxed p-5 font-poppins max-h-[40vh] scroll-smooth   overflow-y-auto text-primary-black dark:text-primary-white text-justify  indent-[50px]'>
 							{project.description}
 						</motion.div>
 						
 
-						<motion.div style={{y:imageY}} className='flex justify-between items-center my-4'>
+						<motion.div  className='flex justify-between items-center my-4'>
 							<div className='flex gap-5 self-end text-primary-orange dark:text-primary-white'>{project.programminglanguagesIcons.map((languge , index)=>
 								<div key={index} className='text-[5vh]'>{languge.icon}</div>)}
 							</div>

@@ -18,7 +18,8 @@ export default {
 				'custom': '20px 35px 1px #f5f5f5',
 			},
 			fontFamily: { 
-				'DotGothic' :  ['DotGothic16', 'sans-serif']
+				'DotGothic' :  ['DotGothic16', 'sans-serif'],
+				'poppins' :  [ 'Poppins', 'sans-serif']
 			}
 		},
 		keyframes: {
