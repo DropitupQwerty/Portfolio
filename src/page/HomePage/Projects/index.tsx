@@ -11,7 +11,7 @@ export const Projects = () => {
 			<div className=' '>
 				<div className='container gap-20  mx-auto flex items-center justify-center  '>
 				
-					<div className='text-5xl lg:text-7xl font-[600] my-[5%] font-poppins whitespace-nowrap text-primary-orange'>MY RECENT WORKS</div>
+					<div className='text-5xl lg:text-7xl font-[600] mb-[5%] font-poppins whitespace-nowrap text-primary-orange'>MY RECENT WORKS</div>
 				
 				</div>
 
