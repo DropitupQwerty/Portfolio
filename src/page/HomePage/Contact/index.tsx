@@ -2,8 +2,32 @@ import React from 'react'
 import { AnimationUpFade } from 'components/AnimationUpFade'
 import { SideLabel } from 'components/AppSideLabel'
 import { MySocmed } from 'utility/Social'
+import  emailJs  from '@emailjs/browser'
+
+const Service_ID = 'service_3d1soey'
+const emailTemplate = 'template_w9ia62s'
+const publicKey='_p02JMH-OM30WSzUh'
 
 export const Contact = () => {
+	const formRef =  React.useRef<HTMLFormElement | null>(null)
+
+	const sendEmail  = (e : React.FormEvent) => { 
+		e.preventDefault()
+                  
+        
+		emailJs.sendForm(Service_ID , emailTemplate , formRef.current as HTMLFormElement , publicKey)
+			.then((result)=> {
+				console.log(result.text)
+				window.location.reload()
+			}
+			).catch((error)=>{
+				console.log(error)
+			}
+			)
+	}
+
+
+
 	return (
 		<div id="contact" className='relative items-center flex my-[40%] lg:my-[10%] '>
 			<SideLabel label='CONTACT'/>
@@ -13,20 +37,20 @@ export const Contact = () => {
 					<div className='text-center text-4xl uppercase font-poppins opacity- text-primary-orange'>write, email, connect, talk</div>
 				</div>
 
-				
-				<div className=' w-full lg:w-1/2 flex flex-col gap-10'>
+
+				<form ref={formRef} onSubmit={sendEmail} className=' w-full lg:w-1/2 flex flex-col gap-10'>
 					<div className=' text-[2vh] w-full '>
 						<label className='block font-semibold uppercase tracking-widest'>Email</label>
-						<input className='p-4 w-full outline-primary-orange dark:text-primary-black bg-white  border rounded-lg shadow-md'/>
+						<input id="email" required name='email' className='p-4 w-full outline-primary-orange dark:text-primary-black bg-white  border rounded-lg shadow-md'/>
 					</div>
 					<div className=' text-[2vh] w-full'>
 						<label className='block font-semibold uppercase tracking-widest '>Message</label>
-						<textarea rows={5} className='p-4 dark:text-primary-black outline-primary-orange w-full bg-white max-h-[400px] border min-h-[200px] rounded-lg shadow-md'/>
+						<textarea name='message' required  rows={5} className='p-4 dark:text-primary-black outline-primary-orange w-full bg-white max-h-[400px] border min-h-[200px] rounded-lg shadow-md'/>
 					</div>
 					<div>
-						<button className='text-[2vh] bg-primary-orange p-4 px-6 font-bold rounded-lg text-primary-white'>SUBMIT</button>
+						<button type='submit' className='text-[2vh] bg-primary-orange p-4 px-6 font-bold rounded-lg text-primary-white'>SUBMIT</button>
 					</div>
-				</div>
+				</form>
 
 				<div className='my-10'>
 					<div className='text-4xl text-center font-poppins  tracking-widest text-primary-orange'>YOU CAN VISIT ME OR MESSAGE ME VIA:</div>
