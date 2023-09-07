@@ -37,7 +37,7 @@ export const ProjectCard = ({index , project} : ProjectCardProps) => {
 				<div className=' flex flex-col lg:flex-row my-[5%] justify-center w-full '>
 					<div className='h-full w-full flex flex-col justify-center items-center  '>
 						<a href={project.links} target='_blank' rel="noreferrer" className=' '>
-							<motion.img src={project.img} className='h-[90%] w-auto hover:scale-105  duration-200'  style={{y:imageY}}/>
+							<motion.img src={project.img} className='max-h-[90%] w-auto hover:scale-105  duration-200'  style={{y:imageY}}/>
 						</a>
 					</div>
 					<div className=' w-full flex flex-col justify-between my-10'>

@@ -8,7 +8,7 @@ import { BiX } from 'react-icons/bi'
 export const NavigationBar = () => {
 	const [open , setOpen] = React.useState<boolean>(false)
 	const [isDarkMode, setIsDarkMode] = React.useState<boolean>(false)
-
+	const [colorChange, setColorchange] = React.useState(false)
 	
 
 	React.useEffect(() => {
@@ -44,12 +44,21 @@ export const NavigationBar = () => {
 		},
 	]
 	
+	const changeNavbarColor = () => {
+		if (window.scrollY >= 80) {
+			setColorchange(true)
+		}
+		else {
+			setColorchange(false)
+		}
+	}
+	window.addEventListener('scroll', changeNavbarColor)
 
 
 	return (
 		<div className='fixed flex top-0 justify-between w-full z-[99999999] '>
 
-			<nav className=' flex justify-between items-center w-full p-10'>
+			<nav className={`flex justify-between items-center w-full p-[.7%] transition-all duration-700 bg-primary-white ${colorChange ? '  bg-opacity-100 shadow-lg ' : 'bg-opacity-0'}`}>
 				<button onClick={()=> setOpen(!open)} className='flex flex-col gap-2'>
 					<span className='h-2 rounded-full w-[80px] bg-primary-orange dark:bg-primary-white'></span>
 					<span className='h-2 rounded-full w-[60px] bg-primary-orange dark:bg-primary-white'></span>
