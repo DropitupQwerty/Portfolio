@@ -4,6 +4,7 @@ import { SideLabel } from 'components/AppSideLabel'
 import { AnimationUpFade } from 'components/AnimationUpFade'
 import Lottie from 'lottie-react'
 import  ComputerAnimation  from 'assets/animation_lm7ahqwu.json'
+import { AppLabelWaterMark } from 'components/AppLabelWaterMark'
 
 
 
@@ -17,7 +18,7 @@ export const About = () => {
 			<div className='container mx-auto'>
 				<AnimationUpFade>
 					<div className=' h-full z-10  rounded-xl flex flex-col lg:flex-row items-center justify-between relative w-full mt-[5%]' >
-						{/* <AppLabelWaterMark label='ABOUT ME' y={y}/> */}
+						<AppLabelWaterMark label='ABOUT ME'/>
 						<div className='gap-10 flex lg:flex-col'>
 							{MySocmed.map((social , index)=>
 								<a href={social.link} target='_blank' key={index} className='text-[5vh] hover:scale-105 dark:text-primary-white' rel="noreferrer">

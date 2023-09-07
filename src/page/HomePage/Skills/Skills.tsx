@@ -4,6 +4,7 @@ import { ProgrammingLanguages } from 'utility/programmingLanguages'
 import { AnimationUpFade } from 'components/AnimationUpFade'
 import Lottie from 'lottie-react'
 import AnimationData from 'assets/animation_lm80jo93.json'
+import { AppLabelWaterMark } from 'components/AppLabelWaterMark'
 
 
 export const Skills = () => {
@@ -11,7 +12,7 @@ export const Skills = () => {
 	return (
 		<div id="skills" className='relative flex  items-center lg:my-40  min-h-[80vh] '>
 			<SideLabel label='SKILL SET' />
-			{/* <AppLabelWaterMark label='TECH STACKS' y={y}/> */}
+			<AppLabelWaterMark label='TECH STACKS' />
 		
 			<AnimationUpFade  className='container mx-auto relative flex flex-col-reverse lg:flex-row items-center lg:w-full w-[80%]  justify-center '>
 				<AnimationUpFade hiddenY={30} className='flex flex-col overflow-hidden w-full p-[1%]' >
