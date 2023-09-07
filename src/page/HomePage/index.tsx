@@ -22,6 +22,8 @@ export const HomePage = () => {
 			<Projects/>
 			<Contact/>
 			<Footer/>
+			{/* 
+			 */}
 		</div>
 	)
 }

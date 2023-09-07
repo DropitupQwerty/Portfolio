@@ -69,14 +69,14 @@ export const NavigationBar = () => {
 					animate={{ opacity: 1 ,x:0 }}
 					exit={{ opacity: 0 , x: -1000 }}
 					transition={{duration:1}}
-					className={'bg-white p-[3%] dark:bg-black/80 backdrop-blur-md dark:text-primary-white min-h-screen text-[12vh] font-bold  h-full w-full shadow-xl fixed overflow-hidden leading-none flex  items-end'}>
+					className={'bg-white p-[3%] dark:bg-black/80 backdrop-blur-md dark:text-primary-white min-h-screen  text-[6vh] lg:text-[12vh] font-bold  h-full w-full shadow-xl fixed overflow-hidden leading-none flex  items-end'}>
 
 					{/* <div className='absolute w-fit text-end text-[18vh] text-transparent top-0 right-0' style={{WebkitTextStroke: '2px #333'}}>MY PORTFOLIO</div>	 */}
 
-					<div className='relative flex w-full justify-between z-10 h-full'>
-						<div className='flex flex-col justify-between'>
-							<div className='flex  '>
-								<div className='text-6xl font-normal'>
+					<div className='relative flex w-full flex-col lg:flex-row justify-between z-10 h-full'>
+						<div className='flex flex-col lg:justify-between'>
+							<div className='flex  justify-end'>
+								<div className='text-4xl lg:text-6xl font-normal'>
 									<button onClick={()=> setOpen(!open)}>
 									Return
 									</button>
@@ -93,8 +93,8 @@ export const NavigationBar = () => {
 							</div>
 						</div>
 
-						<div className='flex items-center'>
-							<div className='flex flex-col gap-10 text-[8vh]'>
+						<div className='flex  items-center justify-center'>
+							<div className='flex flex-row lg:flex-col gap-10 text-[7vh] lg:text-[8vh]'>
 								{MySocmed.map((social,index)=>
 									<div key={index}>
 										<button className='hover:text-primary-orange'>{social.icon}</button>

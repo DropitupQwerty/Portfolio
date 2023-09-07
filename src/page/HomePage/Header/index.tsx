@@ -23,7 +23,7 @@ export const Header = () => {
 		<div ref={container} className='min-h-screen  max-w-screen overflow-hidden container mx-auto gap-10  relative  flex flex-col justify-center items-center z-10 ' >	
 			<div className='relative h-fit  w-full  flex items-center justify-center rounded-full '>
 				{/* <div className=" bg-primary-orange rounded-full overscroll-none  pointer-events-none mix-blend-screen  -z-10 absolute bg-center h-[40vh]  w-[50vh]" ></div> */}
-				<div className=' shadow-sm relative overflow-hidden rounded-full h-[50vh] w-[50vh] flex justify-center '>
+				<div className=' shadow-sm relative overflow-hidden rounded-full h-[30vh] w-[30vh]  lg:h-[50vh] lg:w-[50vh] flex justify-center '>
 					<motion.div className='shadow-xl rounded-full bg-primary-orange dark:bg-primary-white h-full w-full flex items-center absolute ' >
 						<motion.img className='h-[150%]  object-cover  w-full' src={myImage2} />
 					</motion.div>
@@ -40,13 +40,13 @@ export const Header = () => {
 			<div className=''>
 				<div>
 					<div className='overflow h-fit'>
-						<div className='uppercase text-[7vh] flex   font-black  leading-none drop-shadow-lg '>
+						<div className='uppercase text-[5vh] text-center  lg:text-[7vh] lg:flex   font-black  leading-none drop-shadow-lg '>
 							<motion.div ><span className='tracking-wider whitespace-nowrap '>Jacob Allen</span> </motion.div>
 							<motion.div ><span className='text-primary-orange tracking-widest '>Valderama</span></motion.div >
 						</div>
 					</div>
 					<motion.div  className='w-fit  relative '>
-						<p className='text-6xl text-end leading-none font-DotGothic  whitespace-nowrap text-primary-black  font-black tracking-wide uppercase  dark:text-primary-white flex gap-4'>YOUR ASPIRING<div className='relative'> <span className="text-primary-orange after:duration-300 after:bg-white after:dark:bg-[#333] after:animate-typing after:absolute after:h-full after:w-full after:border-l-4 after:left-0 after:border-primary-orange">Web Developer</span></div></p>
+						<p className=' text-4xl lg:text-6xl text-end leading-none font-DotGothic  whitespace-nowrap text-primary-black  font-black tracking-wide uppercase  dark:text-primary-white flex gap-4'>YOUR ASPIRING<div className='relative'> <span className="text-primary-orange after:duration-300 after:bg-white after:dark:bg-[#333] after:animate-typing after:absolute after:h-full after:w-full after:border-l-4 after:left-0 after:border-primary-orange">Web Developer</span></div></p>
 					</motion.div>
 				</div>
 

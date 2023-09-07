@@ -25,11 +25,11 @@ export const Skills = () => {
 
 
 	return (
-		<div  className='relative flex  items-center my-40  min-h-[80vh]'>
+		<div  className='relative flex  items-center lg:my-40  min-h-[80vh] '>
 			<SideLabel label='SKILL SET' />
 			<AppLabelWaterMark label='TECH STACKS' y={y}/>
 		
-			<AnimationUpFade  className='container mx-auto relative flex items-center  justify-center '>
+			<AnimationUpFade  className='container mx-auto relative flex flex-col-reverse lg:flex-row items-center lg:w-full w-[80%]  justify-center '>
 				<AnimationUpFade hiddenY={30} className='flex flex-col overflow-hidden w-full p-[1%]' >
 
 					<div className='text-5xl   uppercase tracking-widest font-bold font-DotGothic'><span className="text-primary-orange">What I&apos;m capable of?</span> </div>
