@@ -28,7 +28,7 @@ export const Header = () => {
 					</motion.div>
 					<AnimationUpFade >
 						<div className='h-full w-full z-20 flex justify-center overflow-hidden rounded-full'>
-							<div className='relative h-[200%]   drop-shadow-md' >
+							<div className='relative h-[200%] ' >
 								<motion.img style={{y:imageY}} className='h-full w-auto object-cover' src={myImage}/>
 							</div>
 						</div>

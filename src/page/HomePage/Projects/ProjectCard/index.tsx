@@ -29,7 +29,7 @@ export const ProjectCard = ({index , project} : ProjectCardProps) => {
 						<div className='text-[7vh] lg:text-[15vh] self-start dark:block hidden  font-black text-transparent leading-none' style={{WebkitTextStroke: '1px #fff'}}>0{index + 1}</div>
 						<div className='text-[7vh] lg:text-[15vh] self-start dark:hidden block  font-black text-transparent leading-none' style={{WebkitTextStroke: '1px #333'}}>0{index + 1}</div>
 						<a className='' href={project.links} target='_blank' rel="noreferrer">
-							<div className='text-5xl lg:text-[8vh] font-black text-primary-orange leading-none uppercase drop-shadow-lg'>{project.name}</div>
+							<div className='text-5xl lg:text-[8vh] font-black text-primary-orange leading-none uppercase '>{project.name}</div>
 							<div className='text-3xl lg:text-[4vh] font-black text-primary-black  leading-none uppercase dark:text-primary-white'>{project.nameDesc}</div>
 						</a>
 					</motion.div>
@@ -39,14 +39,6 @@ export const ProjectCard = ({index , project} : ProjectCardProps) => {
 						<a href={project.links} target='_blank' rel="noreferrer" className=' '>
 							<motion.img src={project.img} className='h-[90%] w-auto hover:scale-105  duration-200'  style={{y:imageY}}/>
 						</a>
-						{/* <div className="hidden dark:block bg-white rounded-full mix-blend-screen  -z-10 absolute bg-center h-[60vh] blur-3xl opacity-10 w-[60vh]" ></div> */}
-
-						{/* <a className='text-[2.5vh] my-2  font-bold  uppercase flex items-center gap-20'>Visit Project 
-							<span className='w-[200px] h-[1px] bg-primary-black relative dark:bg-primary-white flex items-center'>
-								<span className='w-[15px] -right-1 bottom-2 h-[1px] bg-primary-black dark:bg-primary-white absolute rotate-45'></span>
-								<span className='w-[15px] -right-1 top-2 h-[1px] bg-primary-black dark:bg-primary-white absolute -rotate-45'></span>
-							</span>
-						</a> */}
 					</div>
 					<div className=' w-full flex flex-col justify-between my-10'>
 						
