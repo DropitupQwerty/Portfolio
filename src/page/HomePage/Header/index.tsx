@@ -20,7 +20,7 @@ export const Header = () => {
 
 
 	return (			
-		<div ref={container} className='min-h-[80vh] lg:min-h-screen  max-w-screen overflow-hidden container mx-auto gap-10  relative  flex flex-col justify-center items-center z-10 ' >	
+		<div id="home" ref={container} className='min-h-[80vh] lg:min-h-screen  max-w-screen overflow-hidden container mx-auto gap-10  relative  flex flex-col justify-center items-center z-10 ' >	
 			<div className='relative h-fit  w-full  flex items-center justify-center rounded-full '>
 				{/* <div className=" bg-primary-orange rounded-full overscroll-none  pointer-events-none mix-blend-screen  -z-10 absolute bg-center h-[40vh]  w-[50vh]" ></div> */}
 				<div className=' shadow-sm relative overflow-hidden rounded-full h-[30vh] w-[30vh]  lg:h-[50vh] lg:w-[50vh] flex justify-center '>

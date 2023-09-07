@@ -2,7 +2,7 @@ import React from 'react'
 import {MdDarkMode , MdLightMode} from 'react-icons/md'
 import { AnimatePresence, motion } from 'framer-motion'
 import { MySocmed } from 'utility/Social'
-import { BiArrowToLeft } from 'react-icons/bi'
+import { handleScrollToId } from 'utility/scrollToId'
 
 export const NavigationBar = () => {
 	const [open , setOpen] = React.useState<boolean>(false)
@@ -23,23 +23,23 @@ export const NavigationBar = () => {
 	const paths = [
 		{
 			pathname : 'Home',
-			href:'#home'
+			href:'home'
 		},
 		{
 			pathname : 'About',
-			href:'#home'
+			href:'about'
 		},
 		{
 			pathname : 'Skills',
-			href:'#home'
+			href:'skills'
 		},
 		{
 			pathname : 'Projects',
-			href:'#home'
+			href:'projects'
 		},
 		{
 			pathname : 'Contact',
-			href:'#home'
+			href:'contact'
 		},
 	]
 	
@@ -78,18 +78,19 @@ export const NavigationBar = () => {
 						<div className='flex flex-col  lg:justify-between'>
 							<div className='flex  justify-end lg:justify-start'>
 								<div className='text-4xl lg:text-6xl font-normal'>
-									<button onClick={()=> setOpen(!open)}>
+									<button onClick={()=>{ setOpen(!open) }}>
 									Return 
 									</button>
 								</div>
 							</div>
 
 
-							<div className='my-[5%] '>
+							<div className='my-[5%] flex flex-col'>
 								{paths.map((path , index)=> 
-									<div key={index}>
+									<button key={index} onClick={()=>{handleScrollToId(path.href)
+										setOpen(!open)}} >
 										<h1 className='w-fit uppercase my-4 font-poppins text-6xl lg:text-9xl  hover:scale-105 duration-300 hover:text-primary-orange  '>{path.pathname}</h1>
-									</div>
+									</button>
 								)}  
 							</div>
 						</div>
@@ -97,9 +98,9 @@ export const NavigationBar = () => {
 						<div className='flex  items-center justify-center'>
 							<div className='flex flex-row lg:flex-col gap-10 text-[6vh] lg:text-[8vh]'>
 								{MySocmed.map((social,index)=>
-									<div key={index}>
+									<a href={social.link} className='hover:scale-105' target='_blank' key={index} rel="noreferrer">
 										<button className='text-primary-orange'>{social.icon}</button>
-									</div>)}
+									</a>)}
 							</div>
 						</div>
 					</div>

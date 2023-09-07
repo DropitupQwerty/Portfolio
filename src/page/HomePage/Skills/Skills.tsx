@@ -4,29 +4,21 @@ import { ProgrammingLanguages } from 'utility/programmingLanguages'
 import { AnimationUpFade } from 'components/AnimationUpFade'
 import Lottie from 'lottie-react'
 import AnimationData from 'assets/animation_lm80jo93.json'
-import { useScroll, useTransform } from 'framer-motion'
 
 
 export const Skills = () => {
 
-
-
-
-
-
-
-
 	return (
-		<div  className='relative flex  items-center lg:my-40  min-h-[80vh] '>
+		<div id="skills" className='relative flex  items-center lg:my-40  min-h-[80vh] '>
 			<SideLabel label='SKILL SET' />
 			{/* <AppLabelWaterMark label='TECH STACKS' y={y}/> */}
 		
 			<AnimationUpFade  className='container mx-auto relative flex flex-col-reverse lg:flex-row items-center lg:w-full w-[80%]  justify-center '>
 				<AnimationUpFade hiddenY={30} className='flex flex-col overflow-hidden w-full p-[1%]' >
 
-					<div className='text-5xl   uppercase tracking-widest font-bold font-poppins'><span className="text-primary-orange">What I&apos;m capable of?</span> </div>
+					<div className='text-6xl font-[600]  uppercase tracking-widest  font-poppins'><span className="text-primary-orange">What I&apos;m capable of?</span> </div>
 					<div>
-						<p className='text-4xl leading-relaxed text-justify lg:text-center indent-10 text-primary-black dark:text-primary-white font-poppins'>
+						<p className='text-3xl lg:text-4xl leading-relaxed text-justify lg:text-center indent-10 text-primary-black dark:text-primary-white font-poppins'>
         I have a versatile skill set in various programming languages and technologies. Below are some of the key languages and tools I am proficient in:
 						</p>
 					</div>

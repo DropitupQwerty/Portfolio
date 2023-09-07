@@ -21,7 +21,7 @@ export const ProjectCard = ({index , project} : ProjectCardProps) => {
 	const imageY = useTransform(scrollYProgress , [0,1] , [-0,50])
 
 	return (
-		<motion.div ref={container} className='flex flex-col justify-center min-h-screen my-[10%]  lg:my-[2%]'>
+		<motion.div ref={container} className='flex flex-col justify-center min-h-fit my-[10%]  lg:my-[2%]'>
 			<SideLabel label={`PROJECT 0${index + 1}`}/>
 							
 			{/* <motion.div className='absolute text-[10vh] z-10 text-center font-black w-full overflow-hidden flex justify-center  text-transparent opacity-20 dark:opacity-100 uppercase leading-none' style={{WebkitTextStroke: '2px #333', y:imageY}}>{project.name}</motion.div> */}
