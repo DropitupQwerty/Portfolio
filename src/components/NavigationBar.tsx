@@ -58,7 +58,7 @@ export const NavigationBar = () => {
 	return (
 		<div className='fixed flex top-0 justify-between w-full z-[99999999] '>
 
-			<nav className={`flex justify-between items-center w-full p-[.7%] transition-all duration-700 bg-primary-white ${colorChange ? '  bg-opacity-100 shadow-lg ' : 'bg-opacity-0'}`}>
+			<nav className={`flex justify-between items-center w-full p-[.7%] transition-all duration-700 bg-primary-white dark:bg-[#333] ${colorChange ? '  bg-opacity-100 shadow-md ' : 'bg-opacity-0'}`}>
 				<button onClick={()=> setOpen(!open)} className='flex flex-col gap-2'>
 					<span className='h-2 rounded-full w-[70px] bg-primary-orange dark:bg-primary-white'></span>
 					<span className='h-2 rounded-full w-[50px] bg-primary-orange dark:bg-primary-white'></span>
