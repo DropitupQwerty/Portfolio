@@ -70,7 +70,7 @@ export const NavigationBar = () => {
 					animate={{ opacity: 1 ,x:0 }}
 					exit={{ opacity: 0 , x: -1000 }}
 					transition={{duration:1}}
-					className={'bg-white p-[3%] dark:bg-black/80 backdrop-blur-md dark:text-primary-white min-h-screen   h-full w-full shadow-xl fixed overflow-hidden leading-none flex  items-end'}>
+					className={'bg-white p-[3%] dark:bg-[#333] backdrop-blur-md dark:text-primary-white min-h-screen   h-full w-full shadow-xl fixed overflow-hidden leading-none flex  items-end'}>
 
 					{/* <div className='absolute w-fit text-end text-[18vh] text-transparent top-0 right-0' style={{WebkitTextStroke: '2px #333'}}>MY PORTFOLIO</div>	 */}
 
