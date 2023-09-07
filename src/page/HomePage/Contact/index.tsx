@@ -22,7 +22,6 @@ export const Contact = () => {
 			.then((result)=> {
 				console.log(result.text)
 				setIsSent(true)
-				// window.location.reload()
 			}
 			).catch((error)=>{
 				console.log(error)
