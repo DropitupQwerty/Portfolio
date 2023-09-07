@@ -4,21 +4,34 @@ import { SideLabel } from 'components/AppSideLabel'
 import { AnimationUpFade } from 'components/AnimationUpFade'
 import Lottie from 'lottie-react'
 import  ComputerAnimation  from 'assets/animation_lm7ahqwu.json'
+import { AppLabelWaterMark } from 'components/AppLabelWaterMark'
+import { useScroll, useTransform } from 'framer-motion'
 
 
 
 
 
 export const About = () => {
+	const container = React.useRef(null)
+	const {scrollYProgress} = useScroll({
+		target : container,
+		offset: ['start end' , 'end start']
+	})
+
+
+
+	const y = useTransform(scrollYProgress , [0,1] , [-100,100])
+
+
 
 
 	return (
-		<div className=' relative flex overflow-hidden items-center ' >
+		<div ref={container} className=' relative flex overflow-hidden items-center ' >
 			<SideLabel label='ABOUT ME' />
 			<div className='container mx-auto'>
-	
 				<AnimationUpFade>
 					<div className=' h-full z-10  rounded-xl flex flex-c items-center justify-between relative w-full ' >
+						<AppLabelWaterMark label='ABOUT ME' y={y}/>
 						<div className='gap-10 flex flex-col'>
 							{MySocmed.map((social , index)=>
 								<a href={social.link} target='_blank' key={index} className='text-[5vh] hover:scale-105 dark:text-primary-white' rel="noreferrer">

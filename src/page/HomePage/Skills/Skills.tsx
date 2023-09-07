@@ -4,16 +4,30 @@ import { ProgrammingLanguages } from 'utility/programmingLanguages'
 import { AnimationUpFade } from 'components/AnimationUpFade'
 import Lottie from 'lottie-react'
 import AnimationData from 'assets/animation_lm80jo93.json'
+import { AppLabelWaterMark } from 'components/AppLabelWaterMark'
+import { useScroll, useTransform } from 'framer-motion'
 
 
 export const Skills = () => {
+	const container = React.useRef(null)
+	const {scrollYProgress} = useScroll({
+		target : container,
+		offset: ['start end' , 'end start']
+	})
+
+
+
+	const y = useTransform(scrollYProgress , [0,1] , [-200,200])
+
+
 
 
 
 
 	return (
-		<div  className='relative flex  items-center my-40  '>
+		<div  className='relative flex  items-center my-40  min-h-[80vh]'>
 			<SideLabel label='SKILL SET' />
+			<AppLabelWaterMark label='TECH STACKS' y={y}/>
 		
 			<AnimationUpFade  className='container mx-auto relative flex items-center  justify-center '>
 				<AnimationUpFade hiddenY={30} className='flex flex-col overflow-hidden w-full p-[1%]' >
