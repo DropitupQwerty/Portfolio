@@ -3,6 +3,7 @@ import {MdDarkMode , MdLightMode} from 'react-icons/md'
 import { AnimatePresence, motion } from 'framer-motion'
 import { MySocmed } from 'utility/Social'
 import { handleScrollToId } from 'utility/scrollToId'
+import { BiX } from 'react-icons/bi'
 
 export const NavigationBar = () => {
 	const [open , setOpen] = React.useState<boolean>(false)
@@ -77,9 +78,9 @@ export const NavigationBar = () => {
 					<div className='relative flex w-full flex-col lg:flex-row justify-between z-10 h-full'>
 						<div className='flex flex-col  lg:justify-between'>
 							<div className='flex  justify-end lg:justify-start'>
-								<div className='text-4xl lg:text-6xl font-normal'>
+								<div className='text-6xl lg:text-8xl font-normal'>
 									<button onClick={()=>{ setOpen(!open) }}>
-									Return 
+										<BiX/>
 									</button>
 								</div>
 							</div>
