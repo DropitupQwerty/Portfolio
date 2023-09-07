@@ -26,7 +26,7 @@ export const Skills = () => {
 
 					<div className='text-5xl   uppercase tracking-widest font-bold font-poppins'><span className="text-primary-orange">What I&apos;m capable of?</span> </div>
 					<div>
-						<p className='text-4xl leading-relaxed text-center indent-10 text-primary-black dark:text-primary-white font-poppins'>
+						<p className='text-4xl leading-relaxed text-justify lg:text-center indent-10 text-primary-black dark:text-primary-white font-poppins'>
         I have a versatile skill set in various programming languages and technologies. Below are some of the key languages and tools I am proficient in:
 						</p>
 					</div>
