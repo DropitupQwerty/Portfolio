@@ -44,8 +44,8 @@ export const Header = () => {
 							<motion.div ><span className='text-primary-orange tracking-widest '>Valderama</span></motion.div >
 						</div>
 					</div>
-					<motion.div  className='w-fit  relative '>
-						<p className=' text-4xl lg:text-6xl text-end leading-none font-DotGothic  whitespace-nowrap text-primary-black  font-black tracking-wide uppercase  dark:text-primary-white flex gap-4'>YOUR ASPIRING<div className='relative'> <span className="text-primary-orange after:duration-300 after:bg-white after:dark:bg-[#333] after:animate-typing after:absolute after:h-full after:w-full after:border-l-4 after:left-0 after:border-primary-orange">Web Developer</span></div></p>
+					<motion.div  className='flex justify-center  relative '>
+						<p className=' text-4xl text-center lg:text-6xl leading-none font-DotGothic  whitespace-nowrap text-primary-black  font-black tracking-wide uppercase  dark:text-primary-white flex gap-4'>YOUR ASPIRING<div className='relative'> <span className="text-primary-orange after:duration-300 after:bg-white after:dark:bg-[#333] after:animate-typing after:absolute after:h-full after:w-full after:border-l-4 after:left-0 after:border-primary-orange">Web Developer</span></div></p>
 					</motion.div>
 				</div>
 
