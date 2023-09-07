@@ -2,7 +2,7 @@ import React from 'react'
 import { BiLogoFirebase, BiLogoJava, BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiLogoSpringBoot, BiLogoTypescript } from 'react-icons/bi'
 import { SiMysql } from 'react-icons/si'
 
-import healthcare from 'assets/projects/healthcareimage.png'
+// import healthcare from 'assets/projects/healthcareimage.png'
 import reskyutBg from 'assets/projects/reskyutMainPage.png'
 import yokai from 'assets/projects/yokai.png'
 
@@ -74,7 +74,7 @@ export const projects : ProjectType[] = [
 		]
 	},
 	{
-		img: healthcare,
+		img: reskyutBg,
 		name: 'Santos Maternity Clinic',
 		nameDesc:'Healthcare Management System',
 		links: 'https://healthcare-management-system.vercel.app/',
