@@ -74,8 +74,8 @@ export const NavigationBar = () => {
 					{/* <div className='absolute w-fit text-end text-[18vh] text-transparent top-0 right-0' style={{WebkitTextStroke: '2px #333'}}>MY PORTFOLIO</div>	 */}
 
 					<div className='relative flex w-full flex-col lg:flex-row justify-between z-10 h-full'>
-						<div className='flex flex-col lg:justify-between'>
-							<div className='flex  justify-end'>
+						<div className='flex flex-col  lg:justify-between'>
+							<div className='flex  justify-end lg:justify-start'>
 								<div className='text-4xl lg:text-6xl font-normal'>
 									<button onClick={()=> setOpen(!open)}>
 									Return
