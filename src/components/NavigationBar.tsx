@@ -49,7 +49,7 @@ export const NavigationBar = () => {
 		<div className='fixed flex top-0 justify-between w-full z-[99999999] '>
 
 			<nav className=' flex justify-between items-center w-full p-10'>
-				<button onClick={()=> setOpen(!open)} className='flex flex-col gap-4'>
+				<button onClick={()=> setOpen(!open)} className='flex flex-col gap-2'>
 					<span className='h-2 rounded-full w-[80px] bg-primary-orange dark:bg-primary-white'></span>
 					<span className='h-2 rounded-full w-[60px] bg-primary-orange dark:bg-primary-white'></span>
 					<span className='h-2 rounded-full w-[70px] bg-primary-orange dark:bg-primary-white'></span>
