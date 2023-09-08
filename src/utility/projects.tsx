@@ -73,34 +73,34 @@ export const projects : ProjectType[] = [
 			},
 		]
 	},
-	{
-		img: healthCarerImage,
-		name: 'Santos Maternity Clinic',
-		nameDesc:'Healthcare Management System',
-		links: 'https://healthcare-management-system.vercel.app/',
-		description:'This recently completed website and mobile application serve as a comprehensive appointment and schedule management system for doctors and clinics. The platform offers users the convenience of scheduling appointments with healthcare providers efficiently. With user-friendly interfaces, it simplifies the process of securing appointments and enhances overall healthcare accessibility. This digital solution streamlines healthcare administration, ensuring a seamless and efficient experience for both medical practitioners and patients, ultimately contributing to improved healthcare service delivery.',
-		programminglanguagesIcons: [
-			{
-				icon: <BiLogoJavascript />,
-				name: 'Javascript',
-			},
-			{
-				icon: <BiLogoTypescript />,
-				name: 'Typescript',
-			},
-			{
-				icon: <BiLogoReact />,
-				name: 'ReactTS',
-			},
-			{
-				icon: <BiLogoNodejs />,
-				name: 'NodeJs',
-			},
-			{
-				icon: <SiMysql />,
-				name: 'MySql',
-			},
-		]
-	},
+	// {
+	// 	img: healthCarerImage,
+	// 	name: 'Santos Maternity Clinic',
+	// 	nameDesc:'Healthcare Management System',
+	// 	links: 'https://healthcare-management-system.vercel.app/',
+	// 	description:'This recently completed website and mobile application serve as a comprehensive appointment and schedule management system for doctors and clinics. The platform offers users the convenience of scheduling appointments with healthcare providers efficiently. With user-friendly interfaces, it simplifies the process of securing appointments and enhances overall healthcare accessibility. This digital solution streamlines healthcare administration, ensuring a seamless and efficient experience for both medical practitioners and patients, ultimately contributing to improved healthcare service delivery.',
+	// 	programminglanguagesIcons: [
+	// 		{
+	// 			icon: <BiLogoJavascript />,
+	// 			name: 'Javascript',
+	// 		},
+	// 		{
+	// 			icon: <BiLogoTypescript />,
+	// 			name: 'Typescript',
+	// 		},
+	// 		{
+	// 			icon: <BiLogoReact />,
+	// 			name: 'ReactTS',
+	// 		},
+	// 		{
+	// 			icon: <BiLogoNodejs />,
+	// 			name: 'NodeJs',
+	// 		},
+	// 		{
+	// 			icon: <SiMysql />,
+	// 			name: 'MySql',
+	// 		},
+	// 	]
+	// },
 
 ]
