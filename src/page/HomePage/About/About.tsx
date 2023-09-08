@@ -13,9 +13,9 @@ import { AppLabelWaterMark } from 'components/AppLabelWaterMark'
 export const About = () => {
 	
 	return (
-		<div id="about" className=' relative flex overflow-hidden items-center ' >
+		<div id="about" className=' relative flex   overflow-hidden  justify-center items-center ' >
 			<SideLabel label='ABOUT ME' />
-			<div className='container mx-auto'>
+			<div className='container mx-auto '>
 				<AnimationUpFade>
 					<div className=' h-full z-10  rounded-xl flex flex-col lg:flex-row items-center justify-between relative w-full mt-[5%]' >
 						<AppLabelWaterMark label='ABOUT ME'/>

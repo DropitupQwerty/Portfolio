@@ -8,10 +8,10 @@ type SideLabelProps = {
 
 export const SideLabel = (props : SideLabelProps) => {
 	return (
-		<div className='hidden lg:block absolute max-w-screen overflow-hidden -left-[4%] font-semibold  text-[1.3rem]  -rotate-90'>
-			<div className='flex gap-5 items-center tracking-widest'>
+		<div className='hidden lg:flex  font-semibold overflow-visible  text-[1.3rem] justify-center   -rotate-90  h-full w-[2%]  '>
+			<div className='flex gap-5 items-center tracking-widest whitespace-nowrap  justify-center'>
 				{props.label}
-				<span className='w-[100px] h-[1px] bg-primary-black  dark:bg-primary-white'></span>
+				<span className=' h-[1px] w-[100px] bg-primary-black  dark:bg-primary-white'></span>
 			</div>
 		</div>
 	)
