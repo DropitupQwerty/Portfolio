@@ -13,11 +13,11 @@ import { AppLabelWaterMark } from 'components/AppLabelWaterMark'
 export const About = () => {
 	
 	return (
-		<div id="about" className=' relative flex   overflow-hidden  justify-center items-center mx-[2%]' >
+		<div id="about" className=' relative flex   overflow-hidden  justify-center items-center mx-[2%] my-[3%]' >
 			<SideLabel label='ABOUT ME' />
 			<div className='container mx-auto '>
 				<AnimationUpFade>
-					<div className=' h-full z-10  rounded-xl flex flex-col lg:flex-row items-center justify-between relative w-full mt-[5%]' >
+					<div className=' h-full z-10  rounded-xl flex flex-col lg:flex-row items-center justify-between relative w-full ' >
 						<AppLabelWaterMark label='ABOUT ME'/>
 						<div className='gap-10 flex lg:flex-col'>
 							{MySocmed.map((social , index)=>
