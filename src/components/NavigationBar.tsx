@@ -106,7 +106,7 @@ export const NavigationBar = () => {
 						</div>
 
 						<div className='flex  items-center justify-center'>
-							<div className='flex flex-row lg:flex-col gap-10 text-[6vh] lg:text-[8vh]'>
+							<div className='flex flex-row lg:flex-col gap-10 text-6xl lg:text-8xl'>
 								{MySocmed.map((social,index)=>
 									<a href={social.link} className='hover:scale-105' target='_blank' key={index} rel="noreferrer">
 										<button className='text-primary-orange'>{social.icon}</button>

@@ -21,7 +21,7 @@ export const About = () => {
 						<AppLabelWaterMark label='ABOUT ME'/>
 						<div className='gap-10 flex lg:flex-col'>
 							{MySocmed.map((social , index)=>
-								<a href={social.link} target='_blank' key={index} className='text-[5vh] hover:scale-105 dark:text-primary-white' rel="noreferrer">
+								<a href={social.link} target='_blank' key={index} className='text-7xl hover:scale-105 dark:text-primary-white' rel="noreferrer">
 									{social.icon}
 								</a>)}
 						</div>

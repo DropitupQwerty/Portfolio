@@ -22,7 +22,7 @@ export const Header = () => {
 	return (			
 		<div id="home" ref={container} className='min-h-[80vh] lg:min-h-screen  max-w-screen overflow-hidden container mx-auto gap-10  relative  flex flex-col justify-center items-center z-10 ' >	
 			<div className='relative h-fit  w-full  flex items-center justify-center rounded-full '>
-				<div className=' shadow-sm relative overflow-hidden dark:border-4 dark:duration-300 dark:border-primary-white rounded-full h-[30vh] w-[30vh]  lg:h-[50vh] lg:w-[50vh] flex justify-center '>
+				<div className=' shadow-sm relative overflow-hidden dark:border-4 dark:duration-300 dark:border-primary-white rounded-full h-[30vh] w-[30vh] lg:min-h-[350px] lg:min-w-[350px] lg:max-h-[500px] lg:max-w-[500px] flex justify-center '>
 					<motion.div className='shadow-xl rounded-full bg-primary-orange dark:bg-primary-white h-full w-full flex items-center absolute ' >
 						<motion.img className='h-[150%]  object-cover  w-full' src={myImage2} />
 					</motion.div>
@@ -39,7 +39,7 @@ export const Header = () => {
 			<div className=''>
 				<div>
 					<div className='overflow h-fit'>
-						<div className='uppercase text-7xl text-center  font-poppins  lg:text-[7vh] lg:flex   font-black  leading-none '>
+						<div className='uppercase text-7xl text-center  font-poppins  lg:text-8xl lg:flex   font-black  leading-none '>
 							<motion.div ><span className='tracking-wider whitespace-nowrap '>Jacob Allen</span> </motion.div>
 							<motion.div ><span className='text-primary-orange tracking-widest '>Valderama</span></motion.div >
 						</div>

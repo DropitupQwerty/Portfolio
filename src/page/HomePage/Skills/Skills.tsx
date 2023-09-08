@@ -27,7 +27,7 @@ export const Skills = () => {
 						{
 							ProgrammingLanguages.map((language , index) => 
 								<div key={index} className='flex flex-col items-center'>
-									<div className='text-[7vh] text-primary-black dark:text-primary-white' >
+									<div className='text-7xl text-primary-black dark:text-primary-white' >
 										{language.icon}
 									</div>
 									<div className='text-xl text-primary-black dark:text-primary-white font-poppins'>{language.name}</div>
