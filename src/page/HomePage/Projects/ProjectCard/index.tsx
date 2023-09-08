@@ -25,7 +25,7 @@ export const ProjectCard = ({index , project} : ProjectCardProps) => {
 			<SideLabel label={`PROJECT 0${index + 1}`}/>
 			<div className='container mx-auto w-[90%] lg:w-full '>
 				<div className=' overflow  relative '>
-					<motion.div className='flex flex-col lg:flex-row font-poppins items-start lg:items-center lg:mx-[5%] ' >
+					<motion.div className='flex flex-col lg:flex-row font-poppins items-start lg:items-center  ' >
 						<div className='text-[7vh] lg:text-[15vh] self-start dark:block hidden  font-black text-transparent leading-none' style={{WebkitTextStroke: '1px #fff'}}>0{index + 1}</div>
 						<div className='text-[7vh] lg:text-[15vh] self-start dark:hidden block  font-black text-transparent leading-none' style={{WebkitTextStroke: '1px #333'}}>0{index + 1}</div>
 						<a className='' href={project.links} target='_blank' rel="noreferrer">
@@ -34,7 +34,7 @@ export const ProjectCard = ({index , project} : ProjectCardProps) => {
 						</a>
 					</motion.div>
 				</div>
-				<div className=' flex flex-col lg:flex-row my-[2%] justify-center w-full '>
+				<div className={` flex flex-col  ${index  % 2 == 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} my-[2%] justify-center w-full `}>
 					<div className='h-full w-full flex flex-col justify-center items-center  '>
 						<a href={project.links} target='_blank' rel="noreferrer" className='my-[6%] lg:my-0'>
 							<motion.img src={project.img} className='max-h-[90%] w-auto hover:scale-105  duration-200'  style={{y:imageY}}/>
