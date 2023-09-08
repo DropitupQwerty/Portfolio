@@ -12,6 +12,7 @@ export const SideLabel = (props : SideLabelProps) => {
 			<div className='flex gap-5 items-center tracking-widest whitespace-nowrap  justify-center'>
 				{props.label}
 				<span className=' h-[1px] w-[100px] bg-primary-black  dark:bg-primary-white'></span>
+				
 			</div>
 		</div>
 	)
