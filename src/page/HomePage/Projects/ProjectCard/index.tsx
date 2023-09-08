@@ -21,7 +21,7 @@ export const ProjectCard = ({index , project} : ProjectCardProps) => {
 	const imageY = useTransform(scrollYProgress , [0,1] , [-0,50])
 
 	return (
-		<motion.div ref={container} className='flex items-center justify-center h-full my-[10%]  lg:my-[2%]'>
+		<motion.div ref={container} className='flex items-center justify-center h-full my-[10%]  lg:my-[2%] mx-[2%]'>
 			<SideLabel label={`PROJECT 0${index + 1}`}/>
 			<div className='container mx-auto w-[90%] lg:w-full '>
 				<div className=' overflow  relative'>

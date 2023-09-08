@@ -10,7 +10,7 @@ import { AppLabelWaterMark } from 'components/AppLabelWaterMark'
 export const Skills = () => {
 
 	return (
-		<div id="skills" className='relative flex  items-center lg:my-40  min-h-[80vh] '>
+		<div id="skills" className='relative flex  items-center lg:my-40  min-h-[80vh] mx-[2%]'>
 			<SideLabel label='SKILL SET' />
 			<AppLabelWaterMark label='TECH STACKS' />
 		
