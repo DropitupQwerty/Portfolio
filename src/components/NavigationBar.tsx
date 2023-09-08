@@ -99,7 +99,7 @@ export const NavigationBar = () => {
 								{paths.map((path , index)=> 
 									<button key={index} onClick={()=>{handleScrollToId(path.href)
 										setOpen(!open)}} >
-										<h1 className='w-fit uppercase my-4 font-poppins text-6xl lg:text-9xl  hover:scale-105 duration-300 hover:text-primary-orange  '>{path.pathname}</h1>
+										<h1 className='w-fit uppercase my-4 font-poppins  text-6xl lg:text-9xl  hover:scale-105 duration-300 hover:text-primary-orange  '>{path.pathname}</h1>
 									</button>
 								)}  
 							</div>

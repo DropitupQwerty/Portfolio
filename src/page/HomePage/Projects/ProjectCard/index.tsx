@@ -24,7 +24,7 @@ export const ProjectCard = ({index , project} : ProjectCardProps) => {
 		<motion.div ref={container} className='flex items-center justify-center h-full my-[10%]  lg:my-[2%] mx-[2%]'>
 			<SideLabel label={`PROJECT 0${index + 1}`}/>
 			<div className='container mx-auto w-[90%] lg:w-full '>
-				<div className=' overflow  relative'>
+				<div className=' overflow  relative '>
 					<motion.div className='flex flex-col lg:flex-row font-poppins items-start lg:items-center lg:mx-[5%] ' >
 						<div className='text-[7vh] lg:text-[15vh] self-start dark:block hidden  font-black text-transparent leading-none' style={{WebkitTextStroke: '1px #fff'}}>0{index + 1}</div>
 						<div className='text-[7vh] lg:text-[15vh] self-start dark:hidden block  font-black text-transparent leading-none' style={{WebkitTextStroke: '1px #333'}}>0{index + 1}</div>
@@ -36,13 +36,13 @@ export const ProjectCard = ({index , project} : ProjectCardProps) => {
 				</div>
 				<div className=' flex flex-col lg:flex-row my-[2%] justify-center w-full '>
 					<div className='h-full w-full flex flex-col justify-center items-center  '>
-						<a href={project.links} target='_blank' rel="noreferrer" className=' '>
+						<a href={project.links} target='_blank' rel="noreferrer" className='my-[6%] lg:my-0'>
 							<motion.img src={project.img} className='max-h-[90%] w-auto hover:scale-105  duration-200'  style={{y:imageY}}/>
 						</a>
 					</div>
 					<div className=' w-full flex flex-col justify-between my-10'>
 						
-						<motion.div  className='text-3xl leading-relaxed p-5 font-poppins max-h-[40vh] scroll-smooth   overflow-y-auto text-primary-black dark:text-primary-white text-justify  indent-[50px]'>
+						<motion.div  className='text-3xl leading-relaxed p-3 font-poppins max-h-[40vh] scroll-smooth   overflow-y-auto text-primary-black dark:text-primary-white text-justify  indent-[50px]'>
 							{project.description}
 						</motion.div>
 						
