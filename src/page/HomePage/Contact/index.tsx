@@ -32,7 +32,7 @@ export const Contact = () => {
 
 
 	return (
-		<div id="contact" className='relative items-center flex my-[40%] lg:my-[10%] '>
+		<div id="contact" className='relative items-center flex my-[40%] lg:my-[10%] mx-[2%]'>
 			<SideLabel label='CONTACT'/>
 			<AnimationUpFade className='container mx-auto flex flex-col items-center justify-center w-[80%] lg:w-full'>
 				<div className='my-10'>
