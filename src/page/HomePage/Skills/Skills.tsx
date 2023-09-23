@@ -15,12 +15,12 @@ export const Skills = () => {
 			<AppLabelWaterMark label='TECH STACKS' />
 		
 			<AnimationUpFade  className='container mx-auto relative flex flex-col-reverse lg:flex-row items-center lg:w-full w-[80%]  justify-center '>
-				<AnimationUpFade hiddenY={30} className='flex flex-col overflow-hidden w-full p-[1%]' >
+				<AnimationUpFade hiddenY={30} className='flex flex-col  overflow-hidden w-full ' >
 
 					<div className='text-6xl font-[600]  uppercase tracking-widest  font-poppins'><span className="text-primary-orange">What I&apos;m capable of?</span> </div>
-					<div>
-						<p className='text-3xl lg:text-4xl leading-relaxed text-justify lg:indent-10 text-primary-black dark:text-primary-white font-poppins'>
-						I am proficient in a variety of programming languages and technologies. The following are some of the important languages and tools in which I am proficient:
+					<div className='h-fit'>
+						<p className='text-3xl lg:text-4xl leading-relaxed lg:leading-relaxed  text-justify lg:indent-10 text-primary-black dark:text-primary-white font-poppins'>
+    I am proficient in a variety of programming languages and technologies. The following are some of the important languages and tools in which I am proficient:
 						</p>
 					</div>
 					<div className='flex gap-12 flex-wrap w-full justify-center my-20'>
