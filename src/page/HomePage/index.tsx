@@ -8,11 +8,6 @@ import { Contact } from 'page/HomePage/Contact'
 import { Footer } from 'page/HomePage/Footer'
 import { WorkExperience } from 'page/HomePage/WorkExperience'
 
-
-
-
-
-
 export const HomePage = () => {
 	return (
 		<div className='relative z-10 '>

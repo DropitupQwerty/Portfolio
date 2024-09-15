@@ -1,6 +1,7 @@
 import React from 'react'
-import { BiLogoCss3, BiLogoFirebase, BiLogoHtml5, BiLogoJava, BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiLogoSpringBoot, BiLogoTypescript, BiLogoUnity } from 'react-icons/bi'
-import { SiAdobeillustrator, SiAdobephotoshop, SiMysql } from 'react-icons/si'
+import { BiLogoCss3, BiLogoFirebase, BiLogoHtml5, BiLogoJava, BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiLogoSpringBoot, BiLogoTailwindCss, BiLogoTypescript, BiLogoUnity } from 'react-icons/bi'
+import { SiAdobeillustrator, SiAdobephotoshop, SiFlask, SiMysql, SiNextdotjs } from 'react-icons/si'
+import { FaLaravel, FaWordpress } from 'react-icons/fa6'
 
 export const ProgrammingLanguages = [
 	{
@@ -45,18 +46,12 @@ export const ProgrammingLanguages = [
 		color: '#6CB52D',
 		link: 'https://spring.io/projects/spring-boot',
 	},
-	// {
-	// 	icon: <BiLogoTailwindCss />,
-	// 	name: 'Tailwind',
-	// 	color: '#38bdf8',
-	// 	link: 'https://tailwindcss.com/',
-	// },
-	// {
-	// 	icon: <BiLogoVisualStudio />,
-	// 	name: 'VS code',
-	// 	color: '#3BA4EA',
-	// 	link: 'https://code.visualstudio.com/',
-	// },
+	{
+		icon: <BiLogoTailwindCss />,
+		name: 'Tailwind',
+		color: '#38bdf8',
+		link: 'https://tailwindcss.com/',
+	},
 	{
 		icon: <BiLogoUnity />,
 		name: 'Unity',
@@ -92,5 +87,29 @@ export const ProgrammingLanguages = [
 		name: 'Adobe Illustrator',
 		color: '#320000',
 		link: 'https://www.adobe.com/products/illustrator.html',
+	},
+	{
+		icon: <FaWordpress className='' />,
+		name: 'Wordpress',
+		color: '#320000',
+		link: 'https://wordpress.com/',
+	},
+	{
+		icon: <FaLaravel className='' />,
+		name: 'Laravel',
+		color: '#320000',
+		link: 'https://laravel.com/',
+	},
+	{
+		icon: <SiFlask className='' />,
+		name: 'Flask',
+		color: '#320000',
+		link: 'https://flask.palletsprojects.com/en/3.0.x/',
+	},
+	{
+		icon: <SiNextdotjs />,
+		name: 'NextJs',
+		color: '#320000',
+		link: 'https://nextjs.org/',
 	},
 ]

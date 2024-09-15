@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { AnimationUpFade } from 'components/AnimationUpFade'
 import myImage from 'assets/myImage4.webp'
 import myImage2 from 'assets/bgImage.webp'
 
