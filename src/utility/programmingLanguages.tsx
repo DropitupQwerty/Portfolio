@@ -1,7 +1,8 @@
 import React from 'react'
-import { BiLogoCss3, BiLogoFirebase, BiLogoHtml5, BiLogoJava, BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiLogoSpringBoot, BiLogoTailwindCss, BiLogoTypescript, BiLogoUnity } from 'react-icons/bi'
+import { BiLogoFirebase, BiLogoJava, BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiLogoSpringBoot, BiLogoTailwindCss, BiLogoTypescript, BiLogoUnity } from 'react-icons/bi'
 import { SiAdobeillustrator, SiAdobephotoshop, SiFlask, SiMysql, SiNextdotjs } from 'react-icons/si'
 import { FaLaravel, FaWordpress } from 'react-icons/fa6'
+import { FaGitAlt } from 'react-icons/fa'
 
 export const ProgrammingLanguages = [
 	{
@@ -17,16 +18,10 @@ export const ProgrammingLanguages = [
 		link: 'https://www.typescriptlang.org/',
 	},
 	{
-		icon: <BiLogoHtml5 />,
-		name: 'Html',
+		icon: <FaGitAlt />,
+		name: 'Git',
 		color: '#E54C21',
-		link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
-	},
-	{
-		icon: <BiLogoCss3 />,
-		name: 'CSS',
-		color: '#33A1D5',
-		link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+		link: '',
 	},
 	{
 		icon: <BiLogoJava />,
