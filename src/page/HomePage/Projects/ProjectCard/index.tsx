@@ -44,19 +44,24 @@ export const ProjectCard = ({index , project} : ProjectCardProps) => {
 						<motion.div  className='text-3xl leading-relaxed p-3 font-poppins max-h-[40vh] scroll-smooth   overflow-y-auto text-primary-black dark:text-primary-white text-justify  indent-[50px]'>
 							{project.description}
 						</motion.div>
-						
+						<motion.div  className='text-3xl p-4 leading-relaxed  font-poppins scroll-smooth  overflow-y-auto text-primary-black dark:text-primary-white text-justify  '>
+							<div className='mt-4 text-3xl font-semibold font-poppins text-primary-black dark:text-primary-white'>Roles and Responsibilities</div>
+							<ul className='list-disc list-inside p-4'>
+								{project.rolesAndResponsibilities.map((desc, index)=> 
+									<li key={index}>{desc}</li>
+								)}
+							</ul>
+						</motion.div>
 
 						<motion.div  className='flex justify-between items-center my-4'>
-							<div className='flex gap-5 self-end text-primary-orange dark:text-primary-white'>{project.programminglanguagesIcons.map((languge , index)=>
+							<div className='flex flex-wrap gap-5 self-end text-primary-orange dark:text-primary-white'>{project.programminglanguagesIcons.map((languge , index)=>
 								<div key={index} className='text-[5vh]'>{languge.icon}</div>)}
 							</div>
 						</motion.div>
-								
 					</div>
 				</div>
-							
 			</div>
-							
+						
 		</motion.div>
 	)
 }

@@ -17,22 +17,17 @@ export const Contact = () => {
 	const sendEmail  = (e : React.FormEvent) => { 
 		e.preventDefault()
                   
-        
 		emailJs.sendForm(Service_ID , emailTemplate , formRef.current as HTMLFormElement , publicKey)
 			.then((result)=> {
 				console.log(result.text)
 				setIsSent(true)
-			}
-			).catch((error)=>{
+			}).catch((error)=>{
 				console.log(error)
-			}
-			)
+			})
 	}
 
-
-
 	return (
-		<div id="contact" className='relative items-center flex my-[40%] lg:my-[10%] mx-[2%]'>
+		<div id="contact" className='relative items-center flex my-[30%] lg:my-[10%] mx-[2%]'>
 			<SideLabel label='CONTACT'/>
 			<AnimationUpFade className='container mx-auto flex flex-col items-center justify-center w-[80%] lg:w-full'>
 				<div className='my-10'>

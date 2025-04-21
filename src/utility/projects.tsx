@@ -34,6 +34,7 @@ export type ProjectType = {
   links: string;
   description: string;
   programminglanguagesIcons: ProgrammingLanguage[];
+  rolesAndResponsibilities: string[]
 };
 
 export const projects: ProjectType[] = [
@@ -58,6 +59,14 @@ export const projects: ProjectType[] = [
 				name: 'Firebase',
 			},
 		],
+		rolesAndResponsibilities: [
+			'Full Stack Developer responsible for the end-to-end development of the web application',
+			'Built the application using Firebase for backend services and React.js for the frontend',
+			'Implemented role-based access control for three distinct entities: Customer, NGO, and Super Admin',
+			'Integrated geolocation and search features to improve pet-shelter matchmaking',
+			'Designed user-friendly interfaces with responsive layouts for both web and mobile experiences',
+			'Managed authentication, data storage, and deployment through Firebase'
+		]
 	},
 	{
 		img: yokai,
@@ -88,6 +97,13 @@ export const projects: ProjectType[] = [
 				name: 'MySql',
 			},
 		],
+		rolesAndResponsibilities: [
+			'Full Stack Developer',
+			'Developed and maintained features using Java Spring Boot and React with TypeScript',
+			'Focused on the admin panel functionalities and backend integration',
+			'Collaborated with the team using Agile methodologies and daily stand-ups',
+			'Used Jira for task tracking and Bitbucket for version control and code reviews',
+		],
 	},
 	{
 		img: healthCarerImage,
@@ -117,6 +133,14 @@ export const projects: ProjectType[] = [
 				icon: <SiMysql />,
 				name: 'MySql',
 			},
+		],
+		rolesAndResponsibilities: [
+			'Full Stack Developer',
+			'Designed and developed both the admin and guest-facing pages',
+			'Integrated REST APIs and handled end-to-end data flow',
+			'Led the deployment of frontend applications and managed build optimizations',
+			'Contributed to backend development using Node.js and Express',
+			'Troubleshot production issues and optimized performance across the stack'
 		],
 	},
 	{
@@ -157,5 +181,13 @@ export const projects: ProjectType[] = [
 				name: 'C#',
 			},
 		],
+		rolesAndResponsibilities: [
+			'Team leader and collaborative team player',
+			'Full Stack Developer utilizing .NET Core 9 and React with TypeScript',
+			'Applied Agile methodology with sprint planning, daily stand-ups, and retrospectives',
+			'Conducted code reviews and wrote high-quality, maintainable code',
+			'Implemented unit testing to ensure code reliability and functionality',
+			'Handled DevOps tasks, including deploying and updating releases'
+		]
 	},
 ]
